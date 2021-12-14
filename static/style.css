@@ -166,7 +166,7 @@ body {
     border-radius: 5px;
     height: 30px;
     margin: 5px auto;
-    width: 135px;
+    width: 170px;
     padding: 0 15px;
 }
 
@@ -176,7 +176,7 @@ body {
 }
 
 .product_record {
-    height: 125px;
+    height: 130px;
     margin: 15px auto;
     position: relative;
 }
@@ -199,13 +199,13 @@ body {
     float: left;
     margin-top: 0px;
     margin-left: 25px;
-    width: 135px;
+    width: 170px;
 }
 
 .product_record .product_desc {
     display: block;
     float: left;
-    margin-top: 15px;
+    margin-top: 50px;
     margin-left: 25px;
     width: 350px;
 }
@@ -213,9 +213,9 @@ body {
 .product_record .summary {
     display: block;
     float: left;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 25px;
-    width: 100px;
+    width: 120px;
 }
 
 .product_record img {
@@ -286,7 +286,7 @@ body {
 .categories_list .category_name {
     display: block;
     float: left;
-    margin-top: 15px;
+    margin-top: 40px;
     margin-left: 25px;
     width: 150px;
     font-size: 150%;
@@ -297,13 +297,13 @@ body {
     float: left;
     margin-top: 0px;
     margin-left: 25px;
-    width: 175px;
+    width: 190px;
 }
 
 .category_record .category_desc {
     display: block;
     float: left;
-    margin-top: 0px;
+    margin-top: 38px;
     margin-left: 25px;
     width: 300px;
 }
@@ -369,7 +369,7 @@ body {
 .user_record .user_name {
     display: block;
     float: left;
-    margin-top: 15px;
+    margin-top: 6px;
     margin-left: 25px;
     width: 175px;
 }
@@ -404,7 +404,7 @@ body {
     float: left;
     margin-top: 15px;
     margin-left: 25px;
-    width: 125px;
+    width: 170px;
 }
 
 .user_record .user_lastlogin {
@@ -1489,7 +1489,7 @@ td:first-child {
 
 .location-1 {
     height: 368px;
-    width: 368px;
+    width: 362px;
     border: 1px solid #9c9c9c;
     margin: 71px 28px 122px 0px;
     float: left;
