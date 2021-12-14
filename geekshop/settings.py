@@ -163,7 +163,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 #   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
 LOGIN_URL = "authnapp:login"
 
-DOMAIN_NAME = "http://89.108.83.4"
+# DOMAIN_NAME = "http://89.108.83.4"
+DOMAIN_NAME = "http://localhost:8000"
 
 # Read about sending email:
 #   https://docs.djangoproject.com/en/2.2/topics/email/
