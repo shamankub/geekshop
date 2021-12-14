@@ -6,7 +6,8 @@ from django.db import transaction
 from django.shortcuts import HttpResponseRedirect, render
 from django.urls import reverse
 
-from authnapp.forms import ShopUserEditForm, ShopUserLoginForm, ShopUserProfileEditForm, ShopUserRegisterForm
+from authnapp.forms import (ShopUserEditForm, ShopUserLoginForm,
+                            ShopUserProfileEditForm, ShopUserRegisterForm)
 from authnapp.models import ShopUser
 
 
@@ -80,8 +81,7 @@ def send_verify_mail(user):
     verify_link = reverse("auth:verify", args=[user.email, user.activation_key])
 
     title = f"Подтверждение учетной записи {user.username}"
-    message = f"Для подтверждения учетной записи {user.username} \
-    на портале {settings.DOMAIN_NAME} перейдите по ссылке: \
+    message = f"Для подтверждения учетной записи {user.username} на портале {settings.DOMAIN_NAME} перейдите по ссылке: \
     \n{settings.DOMAIN_NAME}{verify_link}"
 
     print(f"from: {settings.EMAIL_HOST_USER}, to: {user.email}")

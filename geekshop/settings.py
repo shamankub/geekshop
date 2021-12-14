@@ -132,9 +132,9 @@ else:
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ru-ru"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Etc/GMT-3"
 
 USE_I18N = True
 
@@ -163,7 +163,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 #   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
 LOGIN_URL = "authnapp:login"
 
-DOMAIN_NAME = "http://localhost:8000"
+DOMAIN_NAME = "http://89.108.83.4"
 
 # Read about sending email:
 #   https://docs.djangoproject.com/en/2.2/topics/email/
