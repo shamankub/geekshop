@@ -164,7 +164,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 #   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
 LOGIN_URL = "authnapp:login"
 
-if DEBUG:   
+if DEBUG:
     DOMAIN_NAME = "http://localhost:8000"
 else:
     DOMAIN_NAME = "http://89.108.83.4"
