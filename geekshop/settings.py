@@ -52,7 +52,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    # "django.middleware.csrf.CsrfViewMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -164,8 +164,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 #   https://docs.djangoproject.com/en/2.2/ref/settings/#login-url
 LOGIN_URL = "authnapp:login"
 
-# DOMAIN_NAME = "http://89.108.83.4"
-DOMAIN_NAME = "http://localhost:8000"
+if DEBUG:   
+    DOMAIN_NAME = "http://localhost:8000"
+else:
+    DOMAIN_NAME = "http://89.108.83.4"
 
 # Read about sending email:
 #   https://docs.djangoproject.com/en/2.2/topics/email/
